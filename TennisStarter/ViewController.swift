@@ -19,7 +19,10 @@ class ViewController: UIViewController {
             self?.setGame = self?.match.setGame
             self?.tieBreakGame = self?.match.tieBreakGame
             // Call UI update methods as needed
+            // Check if a tiebreak game is updated
             self?.updatePointUI()
+            self?.updateTieBreakPointUI()
+            self?.updateGameSetsUI()
             // Other UI updates...
         }
         
@@ -54,21 +57,22 @@ class ViewController: UIViewController {
         match = Match()
         viewDidLoad()
         updatePointUI()
-        updateGameUI()
-        updateSetsUI()
+        updateGameSetsUI()
     }
     
     
     /********Methods*********/
     @IBAction func p1AddPointPressed(_ sender: UIButton) {
-        if setGame.tiebreak(){
-            tieBreakGameP1()
-        }
-        else if !setGame.tiebreak(){
+        if sets.fifthSetFlag(){
             normalGameP1()
         }
-        updateGameUI()
-        updateSetsUI()
+        else if setGame.tiebreak() && !sets.fifthSetFlag(){
+            tieBreakGameP1()
+        }
+        else {
+            normalGameP1()
+        }
+        updateGameSetsUI()
         if gameOverFlag(){
             endOfGameAlert()
         }
@@ -76,14 +80,16 @@ class ViewController: UIViewController {
     }
     
     @IBAction func p2AddPointPressed(_ sender: UIButton) {
-        if setGame.tiebreak(){
-            tieBreakGameP2()
-        }
-        else if !setGame.tiebreak(){
+        if sets.fifthSetFlag(){
             normalGameP2()
         }
-        updateGameUI()
-        updateSetsUI()
+        else if setGame.tiebreak() && !sets.fifthSetFlag(){
+            tieBreakGameP2()
+        }
+        else {
+            normalGameP2()
+        }
+        updateGameSetsUI()
         if gameOverFlag(){
             endOfGameAlert()
         }
@@ -98,14 +104,14 @@ class ViewController: UIViewController {
     
     
     
-    
+
     private func tieBreakGameP1(){
         tieBreakGame.addPointToPlayer1()
         updateTieBreakPointUI()
         if match.tieBreakWon(){
             updatePointUI()
         }
-        match.setWon()
+        match.setWonByTieBreak()
 
     }
     
@@ -115,7 +121,7 @@ class ViewController: UIViewController {
         if match.tieBreakWon(){
             updatePointUI()
         }
-        match.setWon()
+        match.setWonByTieBreak()
     }
     
     
@@ -123,46 +129,92 @@ class ViewController: UIViewController {
         game.addPointToPlayer1()
         match.gameWon()
         match.setWon()
-        updatePointUI()
+        if setGame.tiebreak() && !sets.fifthSetFlag(){
+            updateTieBreakPointUI()
+        } else{
+            updatePointUI()
+        }
+
     }
     
     private func normalGameP2(){
         game.addPointToPlayer2()
-        match.gameWon() // new game started here
+        match.gameWon()
         match.setWon()
-        updatePointUI()
+        if setGame.tiebreak() && !sets.fifthSetFlag(){
+            updateTieBreakPointUI()
+        } else{
+            updatePointUI()
+        }
     }
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
         
-    func updatePointUI() {
+    private func updatePointUI() {
         p1PointsLabel.text = game.player1Score()
         p2PointsLabel.text = game.player2Score()
     }
     
-    func updateTieBreakPointUI() {
-        p1PointsLabel.text = tieBreakGame.player1Score()
-        p2PointsLabel.text = tieBreakGame.player2Score()
+    private func updateTieBreakPointUI() {
+        if !sets.fifthSetFlag() && setGame.tiebreak(){
+            p1PointsLabel.text = tieBreakGame.player1Score()
+            p2PointsLabel.text = tieBreakGame.player2Score()
+        }
     }
     
-    func updateGameUI(){
+    private func updateGameSetsUI(){
         p1GamesLabel.text = setGame.player1Games()
         p2GamesLabel.text = setGame.player2Games()
-    }
-    func updateSetsUI(){
         p1SetsLabel.text = sets.player1Sets()
         p2SetsLabel.text = sets.player2Sets()
     }
     
-
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     private func endOfGameAlert(){
         
         p1Button.isEnabled = false
         p2Button.isEnabled = false
+        var whoWon = ""
+        
+        if sets.GameWonPlayer1(){
+            whoWon = "Player 1"
+        } else if sets.GameWonPlayer2(){
+            whoWon = "Player 2"
+        }
+        let message = "\(whoWon) won the match!"
         
         // Create an alert controller
-        let alertController = UIAlertController(title: "Game Over", message: "This is an alert message.", preferredStyle: .alert)
+        let alertController = UIAlertController(title: "Game Over", message: message, preferredStyle: .alert)
         
         // Create an action for the OK button
         let okAction = UIAlertAction(title: "OK", style: .default) { _ in

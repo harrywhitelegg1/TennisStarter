@@ -35,4 +35,12 @@ class Sets{
         return GameWonPlayer1() || GameWonPlayer2()
     }
     
+    func fifthSetFlag() -> Bool{
+        
+        if player1SetsValue == 2 && player2SetsValue == 2{
+            return true
+        }
+        return false
+    }
+    
 }
