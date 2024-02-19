@@ -50,6 +50,28 @@
                ReferencedContainer = "container:TennisStarter.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "3F4BE4FF2B837286003269C6"
+               BuildableName = "ClassToClassTesting.xctest"
+               BlueprintName = "ClassToClassTesting"
+               ReferencedContainer = "container:TennisStarter.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "3F4BE50E2B8399B4003269C6"
+               BuildableName = "SetsTests.xctest"
+               BlueprintName = "SetsTests"
+               ReferencedContainer = "container:TennisStarter.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction

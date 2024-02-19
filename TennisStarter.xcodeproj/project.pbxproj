@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F4BE50A2B8372E6003269C6 /* ClassToClassTesting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4BE5022B837286003269C6 /* ClassToClassTesting.swift */; };
+		3F4BE51A2B839A23003269C6 /* SetsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4BE5112B8399B4003269C6 /* SetsTests.swift */; };
 		3FC1FC852B7D29A4003C5FFD /* SetGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC1FC842B7D29A4003C5FFD /* SetGame.swift */; };
-		3FC1FC962B7E321C003C5FFD /* gameFunctionality.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC1FC952B7E321C003C5FFD /* gameFunctionality.swift */; };
 		3FC1FC982B7F7BD3003C5FFD /* SetGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC1FC8E2B7E0F00003C5FFD /* SetGameTests.swift */; };
 		3FC1FC992B7F7BE0003C5FFD /* GameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA6F8FC1B26E86B006642BC /* GameTests.swift */; };
 		3FC1FC9B2B81111C003C5FFD /* TieBreakGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC1FC9A2B81111C003C5FFD /* TieBreakGame.swift */; };
@@ -26,6 +27,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		3F4BE5042B837286003269C6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BBA6F8CD1B26E78D006642BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BBA6F8D41B26E78D006642BC;
+			remoteInfo = TennisStarter;
+		};
+		3F4BE5132B8399B4003269C6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BBA6F8CD1B26E78D006642BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BBA6F8D41B26E78D006642BC;
+			remoteInfo = TennisStarter;
+		};
 		3FC1FC902B7E0F00003C5FFD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BBA6F8CD1B26E78D006642BC /* Project object */;
@@ -43,10 +58,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3F4BE5002B837286003269C6 /* ClassToClassTesting.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClassToClassTesting.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F4BE5022B837286003269C6 /* ClassToClassTesting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassToClassTesting.swift; sourceTree = "<group>"; };
+		3F4BE50F2B8399B4003269C6 /* SetsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SetsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F4BE5112B8399B4003269C6 /* SetsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetsTests.swift; sourceTree = "<group>"; };
 		3FC1FC842B7D29A4003C5FFD /* SetGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetGame.swift; sourceTree = "<group>"; };
 		3FC1FC8C2B7E0F00003C5FFD /* SetGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SetGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FC1FC8E2B7E0F00003C5FFD /* SetGameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetGameTests.swift; sourceTree = "<group>"; };
-		3FC1FC952B7E321C003C5FFD /* gameFunctionality.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gameFunctionality.swift; sourceTree = "<group>"; };
 		3FC1FC9A2B81111C003C5FFD /* TieBreakGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TieBreakGame.swift; sourceTree = "<group>"; };
 		3FC1FC9C2B813692003C5FFD /* Match.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Match.swift; sourceTree = "<group>"; };
 		3FC1FC9E2B8136CE003C5FFD /* Sets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sets.swift; sourceTree = "<group>"; };
@@ -65,6 +83,20 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		3F4BE4FD2B837286003269C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F4BE50C2B8399B4003269C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3FC1FC892B7E0F00003C5FFD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -89,6 +121,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F4BE5012B837286003269C6 /* ClassToClassTesting */ = {
+			isa = PBXGroup;
+			children = (
+				3F4BE5022B837286003269C6 /* ClassToClassTesting.swift */,
+			);
+			path = ClassToClassTesting;
+			sourceTree = "<group>";
+		};
+		3F4BE5102B8399B4003269C6 /* SetsTests */ = {
+			isa = PBXGroup;
+			children = (
+				3F4BE5112B8399B4003269C6 /* SetsTests.swift */,
+			);
+			path = SetsTests;
+			sourceTree = "<group>";
+		};
 		3FC1FC8D2B7E0F00003C5FFD /* SetGameTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +151,8 @@
 				BBA6F8D71B26E78D006642BC /* TennisStarter */,
 				BBA6F8ED1B26E78E006642BC /* TennisStarterTests */,
 				3FC1FC8D2B7E0F00003C5FFD /* SetGameTests */,
+				3F4BE5012B837286003269C6 /* ClassToClassTesting */,
+				3F4BE5102B8399B4003269C6 /* SetsTests */,
 				BBA6F8D61B26E78D006642BC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -113,6 +163,8 @@
 				BBA6F8D51B26E78D006642BC /* TennisStarter.app */,
 				BBA6F8EA1B26E78E006642BC /* TennisStarterTests.xctest */,
 				3FC1FC8C2B7E0F00003C5FFD /* SetGameTests.xctest */,
+				3F4BE5002B837286003269C6 /* ClassToClassTesting.xctest */,
+				3F4BE50F2B8399B4003269C6 /* SetsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -128,7 +180,6 @@
 				BBA6F8D81B26E78D006642BC /* Supporting Files */,
 				BBA6F8FA1B26E81E006642BC /* Game.swift */,
 				3FC1FC842B7D29A4003C5FFD /* SetGame.swift */,
-				3FC1FC952B7E321C003C5FFD /* gameFunctionality.swift */,
 				3FC1FC9A2B81111C003C5FFD /* TieBreakGame.swift */,
 				3FC1FC9C2B813692003C5FFD /* Match.swift */,
 				3FC1FC9E2B8136CE003C5FFD /* Sets.swift */,
@@ -165,6 +216,42 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		3F4BE4FF2B837286003269C6 /* ClassToClassTesting */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F4BE5062B837286003269C6 /* Build configuration list for PBXNativeTarget "ClassToClassTesting" */;
+			buildPhases = (
+				3F4BE4FC2B837286003269C6 /* Sources */,
+				3F4BE4FD2B837286003269C6 /* Frameworks */,
+				3F4BE4FE2B837286003269C6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3F4BE5052B837286003269C6 /* PBXTargetDependency */,
+			);
+			name = ClassToClassTesting;
+			productName = ClassToClassTesting;
+			productReference = 3F4BE5002B837286003269C6 /* ClassToClassTesting.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3F4BE50E2B8399B4003269C6 /* SetsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F4BE5152B8399B4003269C6 /* Build configuration list for PBXNativeTarget "SetsTests" */;
+			buildPhases = (
+				3F4BE50B2B8399B4003269C6 /* Sources */,
+				3F4BE50C2B8399B4003269C6 /* Frameworks */,
+				3F4BE50D2B8399B4003269C6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3F4BE5142B8399B4003269C6 /* PBXTargetDependency */,
+			);
+			name = SetsTests;
+			productName = SetsTests;
+			productReference = 3F4BE50F2B8399B4003269C6 /* SetsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		3FC1FC8B2B7E0F00003C5FFD /* SetGameTests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3FC1FC922B7E0F00003C5FFD /* Build configuration list for PBXNativeTarget "SetGameTests" */;
@@ -229,6 +316,14 @@
 				LastUpgradeCheck = 1430;
 				ORGANIZATIONNAME = "University of Chester";
 				TargetAttributes = {
+					3F4BE4FF2B837286003269C6 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = BBA6F8D41B26E78D006642BC;
+					};
+					3F4BE50E2B8399B4003269C6 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = BBA6F8D41B26E78D006642BC;
+					};
 					3FC1FC8B2B7E0F00003C5FFD = {
 						CreatedOnToolsVersion = 15.0;
 						TestTargetID = BBA6F8D41B26E78D006642BC;
@@ -262,11 +357,27 @@
 				BBA6F8D41B26E78D006642BC /* TennisStarter */,
 				BBA6F8E91B26E78E006642BC /* TennisStarterTests */,
 				3FC1FC8B2B7E0F00003C5FFD /* SetGameTests */,
+				3F4BE4FF2B837286003269C6 /* ClassToClassTesting */,
+				3F4BE50E2B8399B4003269C6 /* SetsTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		3F4BE4FE2B837286003269C6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F4BE50D2B8399B4003269C6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3FC1FC8A2B7E0F00003C5FFD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -296,6 +407,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		3F4BE4FC2B837286003269C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F4BE50A2B8372E6003269C6 /* ClassToClassTesting.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F4BE50B2B8399B4003269C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F4BE51A2B839A23003269C6 /* SetsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3FC1FC882B7E0F00003C5FFD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -313,7 +440,6 @@
 				BBA6F8FB1B26E81E006642BC /* Game.swift in Sources */,
 				3FC1FC852B7D29A4003C5FFD /* SetGame.swift in Sources */,
 				3FC1FC9F2B8136CE003C5FFD /* Sets.swift in Sources */,
-				3FC1FC962B7E321C003C5FFD /* gameFunctionality.swift in Sources */,
 				BBA6F8DB1B26E78E006642BC /* AppDelegate.swift in Sources */,
 				3FC1FC9D2B813692003C5FFD /* Match.swift in Sources */,
 			);
@@ -331,6 +457,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		3F4BE5052B837286003269C6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BBA6F8D41B26E78D006642BC /* TennisStarter */;
+			targetProxy = 3F4BE5042B837286003269C6 /* PBXContainerItemProxy */;
+		};
+		3F4BE5142B8399B4003269C6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BBA6F8D41B26E78D006642BC /* TennisStarter */;
+			targetProxy = 3F4BE5132B8399B4003269C6 /* PBXContainerItemProxy */;
+		};
 		3FC1FC912B7E0F00003C5FFD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = BBA6F8D41B26E78D006642BC /* TennisStarter */;
@@ -363,6 +499,130 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		3F4BE5072B837286003269C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ucm.harry.ClassToClassTesting;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TennisStarter.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TennisStarter";
+			};
+			name = Debug;
+		};
+		3F4BE5082B837286003269C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ucm.harry.ClassToClassTesting;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TennisStarter.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TennisStarter";
+			};
+			name = Release;
+		};
+		3F4BE5162B8399B4003269C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ucm.harry.SetsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TennisStarter.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TennisStarter";
+			};
+			name = Debug;
+		};
+		3F4BE5172B8399B4003269C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ucm.harry.SetsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TennisStarter.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TennisStarter";
+			};
+			name = Release;
+		};
 		3FC1FC932B7E0F00003C5FFD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -614,6 +874,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		3F4BE5062B837286003269C6 /* Build configuration list for PBXNativeTarget "ClassToClassTesting" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F4BE5072B837286003269C6 /* Debug */,
+				3F4BE5082B837286003269C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F4BE5152B8399B4003269C6 /* Build configuration list for PBXNativeTarget "SetsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F4BE5162B8399B4003269C6 /* Debug */,
+				3F4BE5172B8399B4003269C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		3FC1FC922B7E0F00003C5FFD /* Build configuration list for PBXNativeTarget "SetGameTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
