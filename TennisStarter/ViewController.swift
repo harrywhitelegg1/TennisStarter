@@ -49,7 +49,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var p2PreviousSetsLabel: UILabel!
     
     
-
+    //create a new match
     private func newMatch(){
         match = Match()
         viewDidLoad()
