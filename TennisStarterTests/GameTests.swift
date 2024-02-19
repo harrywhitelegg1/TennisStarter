@@ -1,7 +1,6 @@
 import XCTest
 
 class GameTests: XCTestCase {
-    
     var game: Game!
     var mirror: Mirror!
     
@@ -216,16 +215,16 @@ class GameTests: XCTestCase {
     
     
     func testMethodsNoSideEffects(){
-        game.addPointToPlayer1()
-        game.addPointToPlayer1()
-        _ = game.complete()
-        _ = game.player1Won()
-        _ = game.player2Won()
-        _ = game.gamePointsForPlayer1()
-        _ = game.gamePointsForPlayer2()
-        game.addPointToPlayer1()
+        game.addPointToPlayer1() //p1:p2 = 15:0
+        game.addPointToPlayer1() //p1:p2 = 30:0
+        _ = game.complete() //false
+        _ = game.player1Won() //false
+        _ = game.player2Won() //false
+        _ = game.gamePointsForPlayer1() //30
+        _ = game.gamePointsForPlayer2() //0
+        game.addPointToPlayer1() //p1:p2 = 40:0
         XCTAssertEqual(game.player1Score(), "40")
-        game.addPointToPlayer1()
+        game.addPointToPlayer1() //p1 won
         _ = game.complete()
         _ = game.player1Won()
         XCTAssertTrue(game.player1Won())
